@@ -1,0 +1,356 @@
+//colors
+$color_turquoise_approx: #3be9e9;
+$white: white;
+$color_regent_gray_approx: #8c9a9a;
+$color_swans_down_approx: #d9e9e9;
+$red: red;
+$black: black;
+$color_mint_tulip_approx: #c7eeee;
+$color_aqua_squeeze_approx: #e9f3f3;
+$gray: grey;
+
+//urls
+$url_0: url(../images/icons/up.png);
+$url_1: url(../images/icons/up_hover.png);
+$url_2: url(../images/icons/down.png);
+$url_3: url(../images/icons/down_hover.png);
+$url_4: url(../images/logos/1.png);
+$url_5: url(../images/logos/2.jpg);
+$url_6: url(../images/logos/3.png);
+$url_7: url(../images/logos/4.png);
+$url_8: url(../images/logos/5.jpg);
+$url_9: url(../images/logos/6.png);
+$url_10: url(../images/mobile/gear.png);
+$url_11: url(../images/mobile/gear_h.png);
+
+//@extend-elements
+//original selectors
+//#layer1, #layer12
+%extend_1 {
+	background-color: $color_turquoise_approx;
+	height: 100px;
+	padding-top: 20px;
+}
+
+//original selectors
+//#layer2, #layer4, #layer6, #layer8, #layer10
+%extend_2 {
+	background-color: $color_regent_gray_approx;
+	height: 80px;
+	padding-top: 15px;
+}
+
+//original selectors
+//#up1, #up2, #up3, #up4, #up5
+%extend_3 {
+	float: left;
+	height: 30px;
+	width: 30px;
+	margin-top: 15px;
+	background-image: $url_0;
+	background-repeat: no-repeat;
+}
+
+//original selectors
+//#down1, #down2, #down3, #down4, #down5
+%extend_4 {
+	height: 30px;
+	width: 30px;
+	margin-top: -45px;
+	float: right;
+	background-image: $url_2;
+	background-repeat: no-repeat;
+}
+
+//original selectors
+//#l2t, #l4t, #l6t, #l8t, #l10t
+%extend_5 {
+	text-align: center;
+	color: $white;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 10px;
+	font-style: italic;
+}
+
+
+#layer1 {
+	@extend %extend_1;
+}
+#layer12 {
+	@extend %extend_1;
+}
+#layer1t {
+	float: left;
+}
+#title11 {
+	margin-top: 20px;
+	font-weight: 900;
+	font-size: 20px;
+	color: $white;
+	font-style: italic;
+	padding-right: 180px;
+}
+#title12 {
+	margin-top: -15px;
+}
+#layer2 {
+	@extend %extend_2;
+}
+#layer4 {
+	@extend %extend_2;
+}
+#layer6 {
+	@extend %extend_2;
+}
+#layer8 {
+	@extend %extend_2;
+}
+#layer10 {
+	@extend %extend_2;
+}
+#up1 {
+	@extend %extend_3;
+	&:hover {
+		background-image: $url_1;
+		background-repeat: no-repeat;
+	}
+}
+#up2 {
+	@extend %extend_3;
+	&:hover {
+		background-image: $url_1;
+		background-repeat: no-repeat;
+	}
+}
+#up3 {
+	@extend %extend_3;
+	&:hover {
+		background-image: $url_1;
+		background-repeat: no-repeat;
+	}
+}
+#up4 {
+	@extend %extend_3;
+	&:hover {
+		background-image: $url_1;
+		background-repeat: no-repeat;
+	}
+}
+#up5 {
+	@extend %extend_3;
+	&:hover {
+		background-image: $url_1;
+		background-repeat: no-repeat;
+	}
+}
+#down1 {
+	@extend %extend_4;
+	&:hover {
+		background-image: $url_3;
+		background-repeat: no-repeat;
+	}
+}
+#down2 {
+	@extend %extend_4;
+	&:hover {
+		background-image: $url_3;
+		background-repeat: no-repeat;
+	}
+}
+#down3 {
+	@extend %extend_4;
+	&:hover {
+		background-image: $url_3;
+		background-repeat: no-repeat;
+	}
+}
+#down4 {
+	@extend %extend_4;
+	&:hover {
+		background-image: $url_3;
+		background-repeat: no-repeat;
+	}
+}
+#down5 {
+	@extend %extend_4;
+	&:hover {
+		background-image: $url_3;
+		background-repeat: no-repeat;
+	}
+}
+#l2t {
+	@extend %extend_5;
+}
+#l4t {
+	@extend %extend_5;
+}
+#l6t {
+	@extend %extend_5;
+}
+#l8t {
+	@extend %extend_5;
+}
+#l10t {
+	@extend %extend_5;
+}
+#layer3 {
+	background-color: $color_swans_down_approx;
+	padding-top: 50px;
+}
+.images {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	width: 70%;
+	margin-left: 70px;
+	filter: opacity(0.7);
+	&:hover {
+		filter: none;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 1s ease;
+	}
+}
+.inner {
+	background-color: $white;
+}
+#layer1b {
+	float: right;
+}
+.layer1b {
+	font-size: 20px;
+	font-weight: bold;
+}
+.layer5t {
+	color: $color_turquoise_approx;
+	font-size: 20px;
+	&:hover {
+		color: $red;
+	}
+}
+#layer5name {
+	font-weight: bold;
+	font-size: 20px;
+	color: $black;
+}
+.layer7t {
+	font-size: 20px;
+	color: $black;
+	&:hover {
+		background-color: $color_mint_tulip_approx;
+	}
+}
+#layer5 {
+	background-color: $color_aqua_squeeze_approx;
+}
+#layer7 {
+	background-color: $color_aqua_squeeze_approx;
+}
+#gear {
+	position: absolute;
+	left: 65%;
+	bottom: 50%;
+	width: 47px;
+	height: 47px;
+	background-image: $url_10;
+	background-repeat: no-repeat;
+	&:hover {
+		width: 47px;
+		height: 47px;
+		background-image: $url_11;
+		cursor: pointer;
+		background-repeat: no-repeat;
+	}
+}
+#layer9 {
+	background-color: $gray;
+}
+#mtlogo {
+	position: relative;
+	left: 30%;
+}
+.image {
+	background-repeat: no-repeat;
+	float: left;
+	width: 230px;
+	height: 230px;
+}
+#mtimages {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 5%;
+}
+#tail {
+	padding-left: 20%;
+}
+#page2 {
+	visibility: hidden;
+	background-color: $white;
+	position: absolute;
+	left: 30%;
+}
+#listtitles {
+	list-style-type: none;
+}
+#mycarousel {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+p.bwt {
+	text-align: center;
+	font-size: 25px;
+}
+#layer5t1:hover {
+	color: $red;
+	&:after {
+		color: $red;
+		content: $url_4;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}
+#layer5t2:hover {
+	color: $red;
+	&:after {
+		content: $url_5;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}
+#layer5t3:hover {
+	color: $red;
+	&:after {
+		content: $url_6;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}
+#layer5t4:hover {
+	color: $red;
+	&:after {
+		content: $url_7;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}
+#layer5t5:hover {
+	color: $red;
+	&:after {
+		content: $url_8;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}
+#layer5t6:hover {
+	color: $red;
+	&:after {
+		content: $url_9;
+		position: absolute;
+		right: 300px;
+		top: 50px;
+	}
+}

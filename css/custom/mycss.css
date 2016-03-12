@@ -1,0 +1,226 @@
+#layer1, #layer12 {
+    background-color: #3BE9E9;
+    height: 100px;
+    padding-top: 20px;
+}
+#layer1t {
+    float: left;
+}
+#title11 {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    padding-right: 180px;
+}
+#title12 {
+    margin-top: -15px;
+}
+#layer2, #layer4, #layer6, #layer8, #layer10 {
+    background-color: #8C9A9A;
+    height: 80px;
+    padding-top: 15px;
+}
+#up1, #up2, #up3, #up4, #up5 {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    background-image: url("../../images/icons/up.png");
+    background-repeat: no-repeat;
+}
+#up1:hover, #up2:hover, #up3:hover, #up4:hover, #up5:hover {
+    background-image: url("../../images/icons/up_hover.png");
+    background-repeat: no-repeat;
+}
+#down1, #down2, #down3, #down4, #down5 {
+    height: 30px;
+    width: 30px;
+    margin-top: -45px;
+    float: right;
+    background-image: url("../../images/icons/down.png");
+    background-repeat: no-repeat;
+}
+#down1:hover, #down2:hover, #down3:hover, #down4:hover, #down5:hover {
+    background-image: url("../../images/icons/down_hover.png");
+    background-repeat: no-repeat;
+}
+#l2t, #l4t, #l6t, #l8t, #l10t {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    font-style: italic;
+}
+#layer3 {
+    background-color: #D9E9E9;
+    padding-top: 50px;
+}
+.images {
+    border-radius: 50%;
+    width: 70%;
+    -webkit-filter: opacity(0.7);
+    margin-left: 70px;
+    filter: opacity(0.7);
+}
+.images:hover {
+    -webkit-filter: none;
+    -webkit-transition: all 1s ease;
+    -webkit-transform: rotate(-30deg);
+    filter: none;
+    transition: all 1s ease;
+    -moz-transform: rotate(-30deg);
+}
+p.bwt {
+    text-align: center;
+    font-size: 25px;
+}
+.inner {
+    background-color: white;
+}
+#layer1b {
+    float: right;
+}
+.layer1b {
+    font-size: 20px;
+    font-weight: bold;
+}
+.layer5t {
+    color: #3BE9E9;
+    font-size: 20px;
+}
+.layer5t:hover {
+    color: red;
+}
+#layer5t1:hover {
+    color: red;
+}
+#layer5t1:hover:after {
+    color: red;
+    content: url("../../images/logos/1.png");
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+}
+#layer5t2:hover {
+    color: red;
+}
+#layer5t2:hover:after {
+    content: url("../../images/logos/2.jpg");
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+}
+#layer5t3:hover {
+    color:red;
+}
+#layer5t3:hover:after {
+    content:url("../../images/logos/3.png");
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+
+}
+#layer5t4:hover {
+    color:red;
+}
+#layer5t4:hover:after {
+    content:url("../../images/logos/4.png");
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+
+}
+#layer5t5:hover {
+    color:red;
+}
+#layer5t5:hover:after {
+    content:url("../../images/logos/5.jpg");
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+
+}
+#layer5t6:hover {
+    color:red;
+}
+#layer5t6:hover:after {
+    content:url("../../images/logos/6.png");
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+#layer5name {
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+}
+.layer7t {
+    font-size:20px;
+    color:black;
+}
+.layer7t:hover {
+    background-color:#C7EEEE;
+}
+#layer5, #layer7 {
+    background-color:#E9F3F3;
+}
+#gear {
+    position:absolute;
+    left:65%;
+    bottom:50%;
+    width:47px;
+    height:47px;
+    background-image: url('../../images/mobile/gear.png');
+    background-repeat: no-repeat;
+}
+#gear:hover {
+    width:47px;
+    height:47px;
+    background-image: url("../../images/mobile/gear_h.png");
+    cursor:pointer;
+    background-repeat: no-repeat;
+}
+#layer9 {
+    background-color:grey;
+}
+#mtlogo {
+    position:relative;
+    left:30%;
+}
+.image {
+    background-repeat:no-repeat;
+    float:left;
+    width:230px;
+    height:230px;
+}
+#mtimages {
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:5%;
+}
+#tail {
+    padding-left:20%;
+}
+#page2 {
+    visibility:hidden;
+    background-color:white;
+    position:absolute;
+    left:30%;
+}
+#listtitles {
+    list-style-type:none;
+}
+#mycarousel {
+    padding-left:15%;
+    padding-right:15%;
+}
